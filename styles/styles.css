@@ -74,5 +74,35 @@
 }
 
 .stay-productive {
-    text-align: center;
+    text-align: left;
+    padding: 20px;
+}
+.access {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
+.badge {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
+
+.collab {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
+.anyfile {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 100px;
+    padding-bottom: 30px;
 }
