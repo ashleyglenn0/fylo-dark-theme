@@ -1,3 +1,8 @@
+body {
+    margin: 0 auto;
+    background: hsl(218, 28%, 13%);
+}
+
 .container {
     max-width: 375px;
     background: hsl(218, 28%, 13%);
@@ -5,6 +10,7 @@
     font-size: 14px;
     font-family: 'Open Sans', sans-serif;
     padding: 20px 30px;
+    
     
 }
 
@@ -22,6 +28,40 @@
     font-weight: 400;
     text-align: center;
 }
+
+.nav-stuff {
+    list-style-type: none;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.nav-stuff li {
+    display: inline;
+    margin-left: 10px;
+    margin-top: -10px;
+}
+.navigation {
+    display: flex;
+    flex-direction: row;
+    /* padding-right: 10px; */
+    /* padding-left: 10px; */
+    justify-content: space-between;
+    
+}
+.logo {
+    height: 20px;
+    padding: 10px;
+    /*float: left;*/
+}
+/*.nav-bar {
+    display: flex;
+    float: right;
+}*/
+
+
 .intro {
     text-align: center;
     padding: 20px;
@@ -55,35 +95,41 @@
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     background: hsl(219, 30%, 18%);
     margin: 20px;
-    text-align: justify;
+    text-align: left;
     padding: 20px 30px;
+}
+.profile {
+    display: flex;
+    flex-direction: row;
 }
 
 .pic-1 {
-    border-radius: 100px;
+    border-radius: 50%;
     height: 50px;
     width: 50px;
     float: left;
-    padding-right: 10px;
+    margin-right: 10px;
+    margin-bottom: 5px;
     
     
 }
 
 .pic-2 {
-    border-radius: 100px;
+    border-radius: 50%;
     height: 50px;
     width: 50px;
     float: left;
-    padding-right: 10px;
+    margin-right: 10px;
     margin-bottom: 5px;
 
 }
 .pic-3 {
-    border-radius: 100px;
+    border-radius: 50%;
     height: 50px;
     width: 50px;
     float: left;
-    padding-right: 10px;
+    margin-right: 10px;
+    margin-bottom: 5px;
 }
 
 .email {
@@ -154,22 +200,6 @@ input[type=text] {
 
 }
 
-.navigation {
-    display: flex;
-    flex-direction: row;
-    padding-right: 10px;
-    padding-left: 10px;
-    
-}
-.logo {
-    height: 20px;
-    padding: 10px;
-    float: left;
-}
-.nav-bar {
-    display: flex;
-    float: right;
-}
 
 .quotation {
     height: 25px;
@@ -179,7 +209,7 @@ input[type=text] {
 }
 
 .card-1 {
-    background: slategray;
+    background: hsl(217, 28%, 15%);
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     margin-bottom: -150px;
     margin-top: 150px;
@@ -196,6 +226,10 @@ input[type=text] {
     padding-top: 200px;
     padding-bottom: 100px;
     margin: -30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 14px;
+    line-height: 1.5;
 }
 
 .about-us {
@@ -208,21 +242,30 @@ input[type=text] {
 
 .profile-one {
     font-size: 10px;
-    line-height: .5;
-    display: inline;  
+    /* line-height: .5;
+    display: inline;   */
 }
 
 .profile-two {
     font-size: 10px;
-    line-height: .5;
-    display: inline;
+    /* line-height: .5;
+    display: inline; */
 }
 
 .profile-three {
     font-size: 10px;
-    line-height: .5;
-    display: inline;
+    /* line-height: .5; */
+    /* display: inline; */
 }
+.profile-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.profile-description *{
+    margin: 0;
+}
+
 
 .logo-2 {
     height: 50px;
@@ -252,3 +295,87 @@ input[type=text] {
     text-align: left;
     line-height: 2.5;
 }
+
+@media (min-width:600px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    .container, .footer, .hero {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    .card {
+        flex-direction: row;
+        max-width: 200px;
+        
+    }
+    .container {
+        flex-direction: column;
+    }
+    .production {
+        float: left;
+    }
+    .middle {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer {
+        flex-direction: column;
+    }
+    .early-access {
+        max-width: 600px;
+        margin: 50px auto;
+    }
+    .early-access-form {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .email {
+        width: 60%;
+    }
+    .get-started-free {
+        width: 30%;
+        margin-top: 5px;
+        margin-left: 20px;
+    }
+    .testimonials {
+        display: flex;
+        flex-direction: row;
+    }
+    .middle {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .everything {
+        width: 40%;
+        padding: 30px;
+    }
+    .footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: -150px;
+        
+    }
+    .footer-column {
+        width: 30%;
+        padding: 20px;
+    }
+    .secondary {
+        margin-top: 100px;
+    }
+    .about-us, .contact-us {
+        margin: -10px 0 0 0;  
+    }
+    .get-started {
+        width: 25%;
+    }
+    
+
+
+}
+  
